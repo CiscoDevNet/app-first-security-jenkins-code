@@ -15,7 +15,7 @@ pipeline {
       steps {
         sh 'pip install -r requirements.txt'
         sh 'apk add libstdc++'
-        sh 'python ./app.py'
+        sh 'python ./app.py &'
       }
     }
     stage('Test App') {
